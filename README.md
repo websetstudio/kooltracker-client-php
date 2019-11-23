@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/websetstudio/kooltracker-client-php.svg?branch=master)](https://travis-ci.org/websetstudio/kooltracker-client-php)
+
 # PHP Client for KoolTracker User API
 
 PHP Client to interact with the KoolTracker API for user addition.
