@@ -1,0 +1,22 @@
+{
+  "name": "websetstudio/kooltracker-client-php",
+  "description": "PHP Client for KoolTracker user reception API",
+  "autoload": {
+    "psr-4": {
+      "WebsetStudio\\KoolTrackerClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WebsetStudio\\KoolTrackerClient\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4"
+  }
+}
