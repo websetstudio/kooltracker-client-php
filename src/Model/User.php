@@ -193,7 +193,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setCustom1(?string $custom1)
+    public function setCustom1($custom1)
     {
         $this->custom1 = $custom1;
 
@@ -213,7 +213,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setCustom2(?string $custom2)
+    public function setCustom2($custom2)
     {
         $this->custom2 = $custom2;
 
