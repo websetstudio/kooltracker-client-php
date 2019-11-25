@@ -12,7 +12,7 @@ class Response implements ResponseInterface
      *
      * @param array $answer
      */
-    public function __construct(array $answer)
+    public function __construct($answer)
     {
         $this->answer = $answer;
     }
