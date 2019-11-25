@@ -7,60 +7,60 @@ interface UserInterface
     /**
      * @return string|null
      */
-    public function getBirthDate(): ?string;
+    public function getBirthDate();
 
     /**
      * @return string|null
      */
-    public function getEmail(): ?string;
+    public function getEmail();
 
     /**
      * @return string|null
      */
-    public function getFirstName(): ?string;
+    public function getFirstName();
 
     /**
      * @return string|null
      */
-    public function getLastName(): ?string;
+    public function getLastName();
 
     /**
      * @return string|null
      */
-    public function getPhone(): ?string;
+    public function getPhone();
 
     /**
      * @return string|null
      */
-    public function getTitle(): ?string;
+    public function getTitle();
 
     /**
      * @return string|null
      */
-    public function getZipCode(): ?string;
+    public function getZipCode();
 
     /**
      * @return string|null
      */
-    public function getCustom1(): ?string;
+    public function getCustom1();
 
     /**
      * @return string|null
      */
-    public function getCustom2(): ?string;
+    public function getCustom2();
 
     /**
      * @return string|null
      */
-    public function getUid(): string;
+    public function getUid();
 
     /**
      * @return \DateTimeInterface
      */
-    public function getOptInDate(): \DateTimeInterface;
+    public function getOptInDate();
 
     /**
      * @return string|null
      */
-    public function getOptInUrl(): string;
+    public function getOptInUrl();
 }
