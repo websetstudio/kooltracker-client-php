@@ -14,7 +14,7 @@ class Generator implements GeneratorInterface
      * @param UserInterface $user
      * @return array
      */
-    public function prepareData(UserInterface $user): array
+    public function prepareData(UserInterface $user)
     {
         $data = [];
 
@@ -42,7 +42,7 @@ class Generator implements GeneratorInterface
      * @param string $method
      * @return array
      */
-    protected function addField(UserInterface $user, array $data, string $field, string $method): array
+    protected function addField(UserInterface $user, array $data, string $field, string $method)
     {
         if (!method_exists($user, $method)) {
             return $data;
