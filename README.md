@@ -10,6 +10,8 @@ PHP Client to interact with the KoolTracker API for user addition.
 * ext-curl for PHP
 * ext-json for PHP
 
+The branch old-php might be used for unsupported PHP versions. (5.6 and 7.0) Be aware that there is no intention of maintaining the branch.
+
 ## Installation ##
 
 ```
