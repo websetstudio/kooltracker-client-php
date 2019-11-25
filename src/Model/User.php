@@ -245,8 +245,10 @@ class User implements UserInterface
      */
     public function getOptInDate()
     {
-        if (null === $this->optInDate) {
+        if (null === $this->optInDate && class_exists(\Error::class)) {
             throw new \Error('The opt-in date must be a DateTime::class');
+        } elseif (null === $this->optInDate && class_exists(\Exception::class)) {
+            throw new \Exception('The opt-in date must be a DateTime::class');
         }
         return $this->optInDate;
     }
