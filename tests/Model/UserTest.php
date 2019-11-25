@@ -111,7 +111,7 @@ class UserTest extends TestCase
         $this->assertEquals($reference, $this->user->getOptInUrl());
     }
 
-    public function setUp(): void
+    public function setUp()
     {
         $this->user = new User();
     }
