@@ -64,7 +64,7 @@ class GeneratorTest extends TestCase
 
     public function testFailsAsNoOptInDate()
     {
-        $this->expectException(\TypeError::class);
+        $this->expectException(\Error::class);
 
         $user = new User();
         $user

@@ -8,7 +8,7 @@ use WebsetStudio\KoolTrackerClient\Model\UserInterface;
 
 class Generator implements GeneratorInterface
 {
-    public const OPTIN_DATE_FORMAT = 'Y-m-d H:i:s';
+    const OPTIN_DATE_FORMAT = 'Y-m-d H:i:s';
 
     /**
      * @param UserInterface $user
