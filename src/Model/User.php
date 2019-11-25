@@ -43,7 +43,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getBirthDate(): ?string
+    public function getBirthDate()
     {
         return $this->birthDate;
     }
@@ -53,7 +53,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setBirthDate(string $birthDate): User
+    public function setBirthDate(string $birthDate)
     {
         $this->birthDate = $birthDate;
 
@@ -63,7 +63,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getEmail(): ?string
+    public function getEmail()
     {
         return $this->email;
     }
@@ -73,7 +73,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setEmail(string $email): User
+    public function setEmail(string $email)
     {
         $this->email = $email;
 
@@ -83,7 +83,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getFirstName(): ?string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -93,7 +93,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setFirstName(string $firstName): User
+    public function setFirstName(string $firstName)
     {
         $this->firstName = $firstName;
 
@@ -103,7 +103,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getLastName(): ?string
+    public function getLastName()
     {
         return $this->lastName;
     }
@@ -113,7 +113,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setLastName(string $lastName): User
+    public function setLastName(string $lastName)
     {
         $this->lastName = $lastName;
 
@@ -123,7 +123,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getPhone(): ?string
+    public function getPhone()
     {
         return $this->phone;
     }
@@ -133,7 +133,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setPhone(string $phone): User
+    public function setPhone(string $phone)
     {
         $this->phone = $phone;
 
@@ -143,7 +143,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getTitle(): ?string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -153,7 +153,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setTitle(string $title): User
+    public function setTitle(string $title)
     {
         $this->title = $title;
 
@@ -163,7 +163,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getZipCode(): ?string
+    public function getZipCode()
     {
         return $this->zipCode;
     }
@@ -173,7 +173,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setZipCode(string $zipCode): User
+    public function setZipCode(string $zipCode)
     {
         $this->zipCode = $zipCode;
 
@@ -183,7 +183,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getCustom1(): ?string
+    public function getCustom1()
     {
         return $this->custom1;
     }
@@ -193,7 +193,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setCustom1(?string $custom1): User
+    public function setCustom1(?string $custom1)
     {
         $this->custom1 = $custom1;
 
@@ -203,7 +203,7 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getCustom2(): ?string
+    public function getCustom2()
     {
         return $this->custom2;
     }
@@ -213,7 +213,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setCustom2(?string $custom2): User
+    public function setCustom2(?string $custom2)
     {
         $this->custom2 = $custom2;
 
@@ -223,9 +223,9 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getUid(): string
+    public function getUid()
     {
-        return $this->uid ?? '';
+        return (null === $this->uid) ? '' : $this->uid;
     }
 
     /**
@@ -233,7 +233,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setUid(string $uid): User
+    public function setUid(string $uid)
     {
         $this->uid = $uid;
 
@@ -243,7 +243,7 @@ class User implements UserInterface
     /**
      * @return \DateTimeInterface
      */
-    public function getOptInDate(): \DateTimeInterface
+    public function getOptInDate()
     {
         return $this->optInDate;
     }
@@ -253,7 +253,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setOptInDate(\DateTimeInterface $optInDate): User
+    public function setOptInDate(\DateTimeInterface $optInDate)
     {
         $this->optInDate = $optInDate;
 
@@ -263,9 +263,9 @@ class User implements UserInterface
     /**
      * @return string|null
      */
-    public function getOptInUrl(): string
+    public function getOptInUrl()
     {
-        return $this->optInUrl ?? '';
+        return (null === $this->optInUrl) ? '' : $this->optInUrl;
     }
 
     /**
@@ -273,7 +273,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setOptInUrl(string $optInUrl): User
+    public function setOptInUrl(string $optInUrl)
     {
         $this->optInUrl = $optInUrl;
 
