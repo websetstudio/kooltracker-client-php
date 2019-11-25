@@ -17,13 +17,13 @@ class Response implements ResponseInterface
         $this->answer = $answer;
     }
 
-    public function isSuccessful(): bool
+    public function isSuccessful()
     {
         return (bool)$this->answer['success'];
     }
 
-    public function getMessage(): string
+    public function getMessage()
     {
-        return $this->answer['message'] ?? '';
+        return (null === $this->answer['message']) ? '' : $this->answer['message'];
     }
 }
