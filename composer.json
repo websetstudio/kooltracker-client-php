@@ -17,7 +17,7 @@
     "ext-json": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.7|^6.5|^7.4|^8.4"
+    "phpunit/phpunit": "^5.7|^6.5|^7.4"
   },
   "suggest": {
     "php": "^7.2"

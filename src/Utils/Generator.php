@@ -42,7 +42,7 @@ class Generator implements GeneratorInterface
      * @param string $method
      * @return array
      */
-    protected function addField(UserInterface $user, array $data, string $field, string $method)
+    protected function addField(UserInterface $user, $data, $field, $method)
     {
         if (!method_exists($user, $method)) {
             return $data;
