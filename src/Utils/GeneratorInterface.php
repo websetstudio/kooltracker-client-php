@@ -7,5 +7,5 @@ use WebsetStudio\KoolTrackerClient\Model\UserInterface;
 
 interface GeneratorInterface
 {
-    public function prepareData(UserInterface $user): array;
+    public function prepareData(UserInterface $user);
 }
