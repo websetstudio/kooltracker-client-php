@@ -21,7 +21,7 @@ class Client
      * @param string $url
      * @param Generator $generator
      */
-    public function __construct(string $url, Generator $generator)
+    public function __construct($url, Generator $generator)
     {
         $this->url = $url;
         $this->generator = $generator;

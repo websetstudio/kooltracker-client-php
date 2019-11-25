@@ -53,7 +53,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setBirthDate(string $birthDate)
+    public function setBirthDate($birthDate)
     {
         $this->birthDate = $birthDate;
 
@@ -73,7 +73,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setEmail(string $email)
+    public function setEmail($email)
     {
         $this->email = $email;
 
@@ -93,7 +93,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setFirstName(string $firstName)
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
 
@@ -113,7 +113,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setLastName(string $lastName)
+    public function setLastName($lastName)
     {
         $this->lastName = $lastName;
 
@@ -133,7 +133,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setPhone(string $phone)
+    public function setPhone($phone)
     {
         $this->phone = $phone;
 
@@ -153,7 +153,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setTitle(string $title)
+    public function setTitle($title)
     {
         $this->title = $title;
 
@@ -173,7 +173,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setZipCode(string $zipCode)
+    public function setZipCode($zipCode)
     {
         $this->zipCode = $zipCode;
 
@@ -233,7 +233,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setUid(string $uid)
+    public function setUid($uid)
     {
         $this->uid = $uid;
 
@@ -276,7 +276,7 @@ class User implements UserInterface
      *
      * @return User
      */
-    public function setOptInUrl(string $optInUrl)
+    public function setOptInUrl($optInUrl)
     {
         $this->optInUrl = $optInUrl;
 
